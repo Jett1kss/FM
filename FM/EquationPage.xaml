@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FM.EquationPage"
+             Title="Уравнение">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="5, 5, 5, 5">
+                <Label Text="Введите уравнение:" FontSize="26" TextColor="#404040" />
+
+                <StackLayout Orientation="Horizontal" >
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="a" />
+                    <Label Text="x² + " FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="b" />
+                    <Label Text="x + " FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="c" />
+                    <Label Text=" = 0" FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <Button Text="Решить" FontSize="23" TextColor="#404040" Clicked="Button_Clicked" />
+
+                <StackLayout>
+                    <Label Text="" FontSize="26" TextColor="#404040" x:Name="Label0" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label1" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label2" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label3" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label4" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

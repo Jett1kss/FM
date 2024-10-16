@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FM.InequalityPage"
+             Title="Неравенство">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="5, 5, 5, 5">
+                <Label Text="Введите неравенство:" FontSize="26" TextColor="#404040" />
+
+                <StackLayout Orientation="Horizontal" >
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="a" />
+                    <Label Text="x² + " FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="b" />
+                    <Label Text="x + " FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                    <Entry FontSize="23" TextColor="#404040" WidthRequest="63" HorizontalTextAlignment="End" Keyboard="Numeric" x:Name="c" />
+                    <Label Text=" " FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                    <Picker Title="-" FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" x:Name="p" />
+                    <Label Text=" 0" FontSize="23" TextColor="#404040" VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <Button Text="Решить" FontSize="23" TextColor="#404040" Clicked="Button_Clicked" />
+
+                <StackLayout>
+                    <Label Text="" FontSize="26" TextColor="#404040" x:Name="Label0" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label1" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label2" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label3" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label4" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label5" />
+                    <Image Source="" x:Name="Image0" />
+                    <Label Text="" FontSize="23" TextColor="#404040" x:Name="Label6" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
